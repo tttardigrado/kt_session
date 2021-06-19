@@ -54,3 +54,36 @@ pip install -e .
 ```
 
 *Congratulations!* Now you can run kt_sessions by using the **kt** command and providing the desired arguments or flags
+
+
+## Default config
+```py
+# function to be run before a new session is created
+# all list elements return will be added 
+# as lines to the beggining of the session file
+def before() -> list:
+    return[]
+
+# function to be run after a new session is created
+# all list elements return will be added 
+# as lines to the end of the session file
+def after() -> list:
+    return[]
+
+# path to the folder where sessions should be stored
+path = "~/.config/kitty"
+
+# ANSI color in which any error should be displayed
+# it will be used ad \33[color_provided
+error_color = "31m"
+
+# ANSI color in which any prompts should be displayed
+# it will be used ad \33[color_provided
+prompt_color = "32m"
+
+# Editor for the -e flag
+editor = "vim"
+
+# File manager for the -o flag
+file_manager = "xdg-open"
+```
