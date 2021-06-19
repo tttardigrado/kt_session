@@ -2,16 +2,16 @@
 A kitty session launcher/maker made in python
 
 ```sh
-    ######################################################
-    #  _______   _______   _______    _______   _______  #
-    # |  _____| |  ___  | |  ___  |  |  _____| |  _____| #
-    # | |___    | |   | | | |___| |  | |       | |_____  #
-    # |  ___|   | |   | | |  ___  |  | |       |  _____| #
-    # | |       | |___| | | |   \ \  | |_____  | |_____  #
-    # |_|       |_______| |_|    \_\ |_______| |_______| #
-    #                                                    #
-    # Made by Force4760                                  #
-    ######################################################
+######################################################
+#  _______   _______   _______    _______   _______  #
+# |  _____| |  ___  | |  ___  |  |  _____| |  _____| #
+# | |___    | |   | | | |___| |  | |       | |_____  #
+# |  ___|   | |   | | |  ___  |  | |       |  _____| #
+# | |       | |___| | | |   \ \  | |_____  | |_____  #
+# |_|       |_______| |_|    \_\ |_______| |_______| #
+#                                                    #
+# Made by Force4760                                  #
+######################################################
 ```
 ## Config
 * The config file is stored at `~/.config/kt/kt_conf.py`
@@ -34,3 +34,23 @@ A kitty session launcher/maker made in python
 
 ## Tech stack
 **Python**, **kitty** and **markdown**
+
+## Install
+Start by cloning the repository
+```sh
+git clone https://github.com/Force4760/kt_session.git
+```
+
+Change to the cloned directory
+```sh
+cd kt_sessions
+```
+
+Install kt
+```sh
+sh install.sh
+# -- or --
+pip install -e .
+```
+
+*Congratulations!* Now you can run kt_sessions by using the **kt** command and providing the desired arguments or flags
