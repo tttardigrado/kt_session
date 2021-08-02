@@ -42,7 +42,7 @@ def main():
         # run a session
         # arg would be the session name
         else:
-            normal_flag(arg, config)
+            normal_flag(arg[0], config)
     # on no argument run help
     else:
         help_flag(config)

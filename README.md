@@ -59,13 +59,13 @@ pip install -e .
 ## Default config
 ```py
 # function to be run before a new session is created
-# all list elements return will be added 
+# all list elements return will be added
 # as lines to the beggining of the session file
 def before() -> list:
     return[]
 
 # function to be run after a new session is created
-# all list elements return will be added 
+# all list elements return will be added
 # as lines to the end of the session file
 def after() -> list:
     return[]

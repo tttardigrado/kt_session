@@ -15,6 +15,7 @@ def normal_flag(name: str, config: dict) -> None:
     # treat path
     path = os.path.expanduser(config["path"])
     path = os.path.join(path, f"{name}.conf")
+    print(path)
 
     if os.path.exists(path):
         # run kitty session

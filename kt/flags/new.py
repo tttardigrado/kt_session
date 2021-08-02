@@ -13,7 +13,7 @@ def new_flag(config: dict) -> None:
     # list of commands to "pre type" to the session file
     before_list = config["before"]()
     # gte the name for the session
-    name = get_name(config["path"], config[3])
+    name = get_name(config["path"], config["colors"])
     # read all the user-provided commands
     commands = read_commands(config["colors"])
     # list of commands to "post type" to the session file
